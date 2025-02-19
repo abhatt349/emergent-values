@@ -4,6 +4,14 @@
 
 The main dataset of outcomes used in the paper is located in `shared_options/options_hierarchical.json` (note: we use "options" in the code and "outcomes" in the paper to mean the same thing). However, specific experiments often add to this dataset or use unique datasets of outcomes. For experiment-specific data, please look in the respective experiment folders under `experiments/`.
 
+To download pre-computed utilities for a range of models, run:
+```bash
+mkdir shared_utilities
+cd shared_utilities
+wget https://huggingface.co/mmazeika/emergent-values-data/resolve/main/options_hierarchical.zip
+unzip options_hierarchical.zip
+```
+
 ## Experiment Framework
 
 The experiment framework consists of three main components:
